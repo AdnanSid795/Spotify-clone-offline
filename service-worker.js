@@ -1,24 +1,23 @@
-const CACHE_NAME = "spotify-cache-v4";
+const CACHE_NAME = "spotify-cache-v5";
 
 const FILES_TO_CACHE = [
-  "/Spotify-clone-offline/",
-  "/Spotify-clone-offline/index.html",
-  "/Spotify-clone-offline/manifest.json",
-  "/Spotify-clone-offline/icon-192.png",
-  "/Spotify-clone-offline/icon-512.png",
+  "./",
+  "./index.html",
+  "./manifest.json",
+  "./icon-192.png",
+  "./icon-512.png",
 
-  // Music files
-  
-  "/Spotify-clone-offline/music/song1.mp3",
-  "/Spotify-clone-offline/music/song2.mp3",
-  "/Spotify-clone-offline/music/song3.mp3",
-  "/Spotify-clone-offline/music/song4.mp3",
-  "/Spotify-clone-offline/music/song5.mp3",
-  "/Spotify-clone-offline/music/song6.mp3",
-  "/Spotify-clone-offline/music/song7.mp3",
-  "/Spotify-clone-offline/music/song8.mp3",
-  "/Spotify-clone-offline/music/song9.mp3",
-  "/Spotify-clone-offline/music/song10.mp3"
+  // MUSIC FILES
+  "./music/song1.mp3",
+  "./music/song2.mp3",
+  "./music/song3.mp3",
+  "./music/song4.mp3",
+  "./music/song5.mp3",
+  "./music/song6.mp3",
+  "./music/song7.mp3",
+  "./music/song8.mp3",
+  "./music/song9.mp3",
+  "./music/song10.mp3"
 ];
 
 self.addEventListener("install", event => {
