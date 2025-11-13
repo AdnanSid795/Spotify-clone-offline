@@ -1,4 +1,4 @@
-const CACHE_NAME = "spotify-cache-v2";
+const CACHE_NAME = "spotify-cache-v3";
 
 const FILES_TO_CACHE = [
   "/Spotify-clone-offline/",
@@ -7,7 +7,7 @@ const FILES_TO_CACHE = [
   "/Spotify-clone-offline/icon-192.png",
   "/Spotify-clone-offline/icon-512.png",
 
-  // MUSIC FILES
+  // Music files
   "/Spotify-clone-offline/music/song0.mp3",
   "/Spotify-clone-offline/music/song1.mp3",
   "/Spotify-clone-offline/music/song2.mp3",
@@ -27,7 +27,6 @@ self.addEventListener("install", event => {
       return cache.addAll(FILES_TO_CACHE);
     })
   );
-  self.skipWaiting();
 });
 
 self.addEventListener("fetch", event => {
@@ -36,17 +35,4 @@ self.addEventListener("fetch", event => {
       return response || fetch(event.request);
     })
   );
-});
-
-self.addEventListener("activate", event => {
-  event.waitUntil(
-    caches.keys().then(keys =>
-      Promise.all(
-        keys.map(key => {
-          if (key !== CACHE_NAME) return caches.delete(key);
-        })
-      )
-    )
-  );
-  self.clients.claim();
 });
