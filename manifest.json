@@ -1,7 +1,8 @@
 {
   "name": "Spotify Clone Offline",
   "short_name": "SpotifyClone",
-  "start_url": "https://adnansid795.github.io/Spotify-clone-offline/",
+  "start_url": "/Spotify-clone-offline/",
+  "scope": "/Spotify-clone-offline/",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#000000",
