@@ -1,4 +1,4 @@
-const CACHE_NAME = "spotify-cache-v3";
+const CACHE_NAME = "spotify-cache-v4";
 
 const FILES_TO_CACHE = [
   "/Spotify-clone-offline/",
@@ -8,7 +8,7 @@ const FILES_TO_CACHE = [
   "/Spotify-clone-offline/icon-512.png",
 
   // Music files
-  "/Spotify-clone-offline/music/song0.mp3",
+  
   "/Spotify-clone-offline/music/song1.mp3",
   "/Spotify-clone-offline/music/song2.mp3",
   "/Spotify-clone-offline/music/song3.mp3",
