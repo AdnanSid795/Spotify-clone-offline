@@ -797,5 +797,14 @@
     window.playSong = playSong; // handy
     window._library = library;
   </script>
+   <!-- PWA Service Worker Registration -->
+  <script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("./service-worker.js")
+      .then(() => console.log("Service Worker Registered"))
+      .catch(err => console.log("SW Registration Failed:", err));
+  }
+</script>
+
 </body>
 </html>
